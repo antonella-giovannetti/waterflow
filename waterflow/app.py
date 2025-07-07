@@ -8,7 +8,7 @@ import mlflow.xgboost
 app = Flask(__name__)
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 
-MODEL_NAME = "water_potability_xgb"
+MODEL_NAME = "xgb_300_0.05_balanced"
 MODEL_VERSION = 1
 
 model_uri = f"models:/{MODEL_NAME}/{MODEL_VERSION}"
